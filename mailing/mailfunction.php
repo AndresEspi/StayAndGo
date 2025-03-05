@@ -1,3 +1,4 @@
+<!-- filepath: /C:/Users/Mauricio/StayAndGo/mailing/mailfunction.php -->
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -35,7 +36,7 @@ function mailfunction($mail_reciever_email, $mail_reciever_name, $mail_msg, $att
 
     $mail->msgHTML($mail_msg);
 
-
+    
     if($attachment !== false){
         $mail->AddAttachment($attachment);
     }

@@ -1,3 +1,4 @@
+<!-- filepath: /C:/Users/Mauricio/StayAndGo/contactme.php -->
 <?php   
     require("./mailing/mailfunction.php");
 
@@ -6,11 +7,11 @@
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
+    $body = "<ul><li>Nombre: ".$name."</li><li>Teléfono: ".$phone."</li><li>Correo: ".$email."</li><li>Mensaje: ".$message."</li></ul>";
 
-    $status = mailfunction("andresm.espinosas15@gmail.com", "Company", $body); //reciever
+    $status = mailfunction("andresm.espinosas15@gmail.com", "Company", $body); // Reemplaza con tu dirección de correo
     if($status)
-        echo '<center><h1>Thanks! We will contact you soon.</h1></center>';
+        echo '<center><h1>¡Gracias! Nos pondremos en contacto contigo pronto.</h1></center>';
     else
-        echo '<center><h1>Error sending message! Please try again.</h1></center>';    
+        echo '<center><h1>¡Error al enviar el mensaje! Por favor, inténtalo de nuevo.</h1></center>';    
 ?>
