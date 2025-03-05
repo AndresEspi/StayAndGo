@@ -227,45 +227,85 @@
         ></iframe>
       </div>
       <div class="contact-form">
-        <form action="./contactme.php" method="POST">
-          <input
-            type="text"
-            name="name"
-            placeholder="Nombre"
-            class="contact-form-txt"
-            required
-          />
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{10}"
-            required
-            placeholder="Número de contacto"
-            maxlength="10"
-            class="contact-form-phone"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Correo"
-            class="contact-form-email"
-            required
-          />
-          <textarea
-            placeholder="Tu Mensaje"
-            name="message"
-            class="contact-form-txtarea"
-            required
-          ></textarea>
-          <input
-            type="submit"
-            value="Enviar"
-            name="submit"
-            class="contact-form-btn"
-          />
+        <style>
+          /* Contenedor principal para centrar y limitar el ancho */
+          .contact-form {
+            max-width: 900px; /* Ajusta el ancho máximo si lo deseas */
+            margin: 0 auto;   /* Centra horizontalmente */
+            padding: 0 20px;  /* Espaciado lateral opcional */
+          }
+      
+          /* Usamos CSS Grid con una sola columna para apilar los elementos verticalmente */
+          .contact-form form {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna */
+            gap: 20px; /* Espacio entre cada campo */
+          }
+      
+          /* Cada label se muestra como bloque para ocupar todo el ancho disponible */
+          .contact-form form label {
+            display: block;
+          }
+      
+          /* Los inputs y textarea se adaptan al 100% de su contenedor */
+          .contact-form form input,
+          .contact-form form textarea {
+            width: 100%;
+            box-sizing: border-box; /* Para que el padding y borde se incluyan en el 100% */
+          }
+      
+          /* Centra el botón en su "celda" y puedes ajustar su ancho si quieres */
+          .contact-form form .submit-btn {
+            justify-self: center; 
+            /* width: 150px;  Ajusta si deseas un ancho fijo para el botón */
+          }
+        </style>
+      
+        <form action="https://formspree.io/f/xnnpanvl" method="POST">
+          <label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Nombre"
+              class="contact-form-txt"
+              required
+            />
+          </label>
+          <label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{10}"
+              placeholder="Número de contacto"
+              maxlength="10"
+              class="contact-form-phone"
+              required
+            />
+          </label>
+          <label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo"
+              class="contact-form-email"
+              required
+            />
+          </label>
+          <label>
+            <textarea
+              name="message"
+              placeholder="Tu Mensaje"
+              class="contact-form-txtarea"
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="contact-form-btn submit-btn">
+            Enviar
+          </button>
         </form>
       </div>
+      
     </div>
 
     <div class="footer">
