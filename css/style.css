@@ -591,7 +591,25 @@ body{
 
 .clients .owl-dot.active {
     background-color: #4F84C4;
-}    
+}
+
+.clients .owl-carousel .item img {
+  border: none; /* Remove border */
+  border-radius: 10px; /* Soften corners */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .clients .owl-carousel .item img {
+    width: 90%; /* Adjust image width for mobile */
+  }
+  .faq .container {
+    padding: 0 10px; /* Adjust container padding for mobile */
+  }
+}
 
 .team{
     min-width: 100vw;
