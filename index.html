@@ -41,58 +41,111 @@
       #faq {
         scroll-margin-top: 20px;
       }
+      @media (max-width: 768px) {
+        .header .navbar ul {
+          flex-direction: column;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .header .navbar ul li {
+          margin-bottom: 10px;
+        }
+        .header .logo img {
+          max-width: 150px; /* Ajusta el tamaño máximo del logo */
+          height: auto;
+        }
+      }
+      @media (max-width: 575px) {
+        .container,
+        .container-fluid {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .footer .container,
+        .footer-top .container {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+      }
+      .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .footer {
+        width: 100%;
+        overflow: hidden; /* Evita el desbordamiento horizontal */
+      }
+      .footer-top {
+        width: 100%;
+        overflow: hidden; /* Evita el desbordamiento horizontal */
+      }
+      .owl-carousel .item img {
+        width: 100%;
+        height: auto;
+      }
     </style>
   </head>
-
   <body>
     <header class="header">
-      <a href="#" class="logo"
-        ><img src="./images/image.png" alt="Logo Stay & Go"
-      /></a>
-      <div class="fas fa-bars"></div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#service">Servicios</a></li>
-          <li><a href="#faq">Galería</a></li>
-          <li><a href="#contact">Ubicacion</a></li>
-        </ul>
-      </nav>
+      <div class="container-fluid">
+        <a href="#" class="logo"
+          ><img src="./images/image.png" alt="Logo Stay & Go"
+        /></a>
+        <div class="fas fa-bars"></div>
+        <nav class="navbar">
+          <ul class="d-flex justify-content-around">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#service">Servicios</a></li>
+            <li><a href="#faq">Galería</a></li>
+            <li><a href="#contact">Ubicación</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section id="home" class="home">
-      <h1>Transforma tu Hogar con Elegancia</h1>
-      <h2>El Toque de Distinción que Mereces</h2>
-      <div class="wave wave1"></div>
-      <div class="wave wave2"></div>
-      <div class="wave wave3"></div>
+      <div class="container-fluid text-center">
+        <h1>Transforma tu Hogar con Elegancia</h1>
+        <h2>El Toque de Distinción que Mereces</h2>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+      </div>
     </section>
 
     <section id="about" class="about">
-      <h1 class="heading">Sobre Nosotros</h1>
-      <div class="row">
-        <div class="content">
-          <h3>¡Llevamos Comodidad a tu Hogar!</h3>
-          <p>
-            En Stay & Go, ofrecemos una amplia gama de muebles que brindan
-            tranquilidad y estilo a tu hogar. Desde camas hasta mesas, sillas y
-            estantes, tenemos todo lo que necesitas para amueblar tu espacio.
-          </p>
+      <div class="container">
+        <h1 class="heading text-center">Sobre Nosotros</h1>
+        <div class="row">
+          <div class="col-12">
+            <h3>¡Llevamos Comodidad a tu Hogar!</h3>
+            <p>
+              En Stay & Go, ofrecemos una amplia gama de muebles que brindan
+              tranquilidad y estilo a tu hogar. Desde camas hasta mesas, sillas
+              y estantes, tenemos todo lo que necesitas para amueblar tu
+              espacio.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="communicate">
+    <div class="communicate text-center">
       <h3>Descubre los Mejores Muebles para tu Hogar</h3>
       <p>Calidad y Comodidad a tu Alcance</p>
-      <a href="#contact"><button class="btn">Tu Opinion</button></a>
+      <a href="#contact"><button class="btn btn-primary">Tu Opinión</button></a>
     </div>
 
     <div class="pt-5 pb-5" style="background-color: #f2f2f2">
       <div class="container">
         <div class="row">
-          <div class="section-head col-sm-12" id="service">
+          <div class="section-head col-sm-12 text-center" id="service">
             <h1>Nuestros Servicios</h1>
             <p>
               Proveemos soluciones de muebles de alta calidad para hacer de tu
@@ -101,7 +154,7 @@
             </p>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <div class="item">
+            <div class="item text-center">
               <span class="icon feature_box_col_one"
                 ><i class="fa fa-laptop"></i
               ></span>
@@ -116,7 +169,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <div class="item">
+            <div class="item text-center">
               <span class="icon feature_box_col_two"
                 ><i class="fa fa-android"></i
               ></span>
@@ -130,7 +183,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <div class="item">
+            <div class="item text-center">
               <span class="icon feature_box_col_three"
                 ><i class="fa fa-magic"></i
               ></span>
@@ -144,7 +197,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <div class="item">
+            <div class="item text-center">
               <span class="icon feature_box_col_three"
                 ><i class="fa fa-magic"></i
               ></span>
@@ -158,7 +211,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <div class="item">
+            <div class="item text-center">
               <span class="icon feature_box_col_three"
                 ><i class="fa fa-magic"></i
               ></span>
@@ -176,49 +229,70 @@
     </div>
 
     <section class="faq">
-      <div class="row">
-        <div class="clients mt-100">
-          <div class="container">
-            <h1 class="heading" style="color: #00bfff" id="faq">Galería</h1>
-            <div class="section-header">
-              <p style="color: white">
-                Descubre la elegancia en cada detalle: inspiración para tu
-                hogar.
-              </p>
-            </div>
-            <div class="owl-carousel clients-carousel">
-              <img src="./images/image.png" alt="Client Logo" />
-              <img src="./images/image.png" alt="Client Logo" />
-              <img src="./images/image.png" alt="Client Logo" />
-              <img src="./images/image.png" alt="Client Logo" />
-              <img src="./images/image.png" alt="Client Logo" />
-              <img src="./images/image.png" alt="Client Logo" />
-              <img src="./images/image.png" alt="Client Logo" />
-              <img src="./images/image.png" alt="Client Logo" />
+      <div class="container">
+        <div class="row">
+          <div class="clients mt-100">
+            <div class="container">
+              <h1 class="heading text-center" style="color: #00bfff" id="faq">
+                Galería
+              </h1>
+              <div class="section-header text-center">
+                <p style="color: white">
+                  Descubre la elegancia en cada detalle: inspiración para tu
+                  hogar.
+                </p>
+              </div>
+              <div class="owl-carousel clients-carousel">
+                <div class="item">
+                  <img src="./images/image.png" alt="Client Logo" />
+                </div>
+                <div class="item">
+                  <img src="./images/image.png" alt="Client Logo" />
+                </div>
+                <div class="item">
+                  <img src="./images/image.png" alt="Client Logo" />
+                </div>
+                <div class="item">
+                  <img src="./images/image.png" alt="Client Logo" />
+                </div>
+                <div class="item">
+                  <img src="./images/image.png" alt="Client Logo" />
+                </div>
+                <div class="item">
+                  <img src="./images/image.png" alt="Client Logo" />
+                </div>
+                <div class="item">
+                  <img src="./images/image.png" alt="Client Logo" />
+                </div>
+                <div class="item">
+                  <img src="./images/image.png" alt="Client Logo" />
+                </div>
+              </div>
             </div>
           </div>
+          <script src="lib/jquery/jquery.min.js"></script>
+          <script src="lib/jquery/jquery-migrate.min.js"></script>
+          <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script src="lib/easing/easing.min.js"></script>
+          <script src="lib/waypoints/waypoints.min.js"></script>
+          <script src="lib/counterup/counterup.min.js"></script>
+          <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+          <script src="lib/lightbox/js/lightbox.min.js"></script>
         </div>
-        <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
-        <script src="lib/jquery/jquery.min.js"></script>
-        <script src="lib/jquery/jquery-migrate.min.js"></script>
-        <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
       </div>
     </section>
 
     <section id="contact" class="contact">
-      <h1 class="heading">Ponte en Contacto</h1>
+      <div class="container">
+        <h1 class="heading text-center">Ponte en Contacto</h1>
+      </div>
     </section>
 
     <div class="contact-in">
       <div class="contact-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.980448991856!2d-74.115168!3d4.597525000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f992fd4ade937%3A0x74f63ce8cbf03682!2zQ3JhLiAzNiAjIDI2LTEzLCBQdWVudGUgQXJhbmRhLCBCb2dvdMOhLCBELkMuLCBCb2dvdMOhLCBELkMu!5e0!3m2!1ses-419!2sco!4v1741208433544!5m2!1ses-419!2sco"
-          width="600"
+          width="100%"
           height="450"
           style="border: 0"
           allowfullscreen=""
@@ -231,36 +305,36 @@
           /* Contenedor principal para centrar y limitar el ancho */
           .contact-form {
             max-width: 900px; /* Ajusta el ancho máximo si lo deseas */
-            margin: 0 auto;   /* Centra horizontalmente */
-            padding: 0 20px;  /* Espaciado lateral opcional */
+            margin: 0 auto; /* Centra horizontalmente */
+            padding: 0 20px; /* Espaciado lateral opcional */
           }
-      
+
           /* Usamos CSS Grid con una sola columna para apilar los elementos verticalmente */
           .contact-form form {
             display: grid;
             grid-template-columns: 1fr; /* Una sola columna */
             gap: 20px; /* Espacio entre cada campo */
           }
-      
+
           /* Cada label se muestra como bloque para ocupar todo el ancho disponible */
           .contact-form form label {
             display: block;
           }
-      
+
           /* Los inputs y textarea se adaptan al 100% de su contenedor */
           .contact-form form input,
           .contact-form form textarea {
             width: 100%;
             box-sizing: border-box; /* Para que el padding y borde se incluyan en el 100% */
           }
-      
+
           /* Centra el botón en su "celda" y puedes ajustar su ancho si quieres */
           .contact-form form .submit-btn {
-            justify-self: center; 
+            justify-self: center;
             /* width: 150px;  Ajusta si deseas un ancho fijo para el botón */
           }
         </style>
-      
+
         <form action="https://formspree.io/f/xnnpanvl" method="POST">
           <label>
             <input
@@ -305,7 +379,6 @@
           </button>
         </form>
       </div>
-      
     </div>
 
     <div class="footer">
@@ -363,7 +436,5 @@
         </div>
       </div>
     </div>
-
-    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
   </body>
 </html>
