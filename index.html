@@ -84,11 +84,33 @@
         width: 100%;
         overflow: hidden; /* Evita el desbordamiento horizontal */
       }
-      .owl-carousel .item img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 70px; /* Add more spacing at the end of the gallery section */
+      }
+      .gallery img {
+        width: calc(25% - 10px);
+        border-radius: 10px;
+      }
+      @media (max-width: 768px) {
+        .gallery img {
+          width: calc(50% - 10px);
+        }
+      }
+      @media (max-width: 575px) {
+        .gallery img {
+          width: 100%;
+        }
+      }
+      .communicate .btn {
+        color: #002e5f; /* Change text color to blue */
+      }
+      .communicate .btn:hover {
+        background: #00bfff; /* Change background color on hover */
+        color: white; /* Change text color on hover */
       }
     </style>
   </head>
@@ -244,31 +266,15 @@
                   hogar.
                 </p>
               </div>
-              <div class="owl-carousel clients-carousel">
-                <div class="item">
-                  <img src="./images/fotos1.jpg" alt="Client Logo" />
-                </div>
-                <div class="item">
-                  <img src="./images/fotos2.jpg" alt="Client Logo" />
-                </div>
-                <div class="item">
-                  <img src="./images/fotos1.jpg" alt="Client Logo" />
-                </div>
-                <div class="item">
-                  <img src="./images/fotos2.jpg" alt="Client Logo" />
-                </div>
-                <div class="item">
-                  <img src="./images/fotos1.jpg" alt="Client Logo" />
-                </div>
-                <div class="item">
-                  <img src="./images/fotos2.jpg" alt="Client Logo" />
-                </div>
-                <div class="item">
-                  <img src="./images/fotos1.jpg" alt="Client Logo" />
-                </div>
-                <div class="item">
-                  <img src="./images/fotos1.jpg" alt="Client Logo" />
-                </div>
+              <div class="gallery">
+                <img src="./images/fotos1.jpg" alt="Gallery Image 1" />
+                <img src="./images/fotos2.jpg" alt="Gallery Image 2" />
+                <img src="./images/fotos1.jpg" alt="Gallery Image 3" />
+                <img src="./images/fotos2.jpg" alt="Gallery Image 4" />
+                <img src="./images/fotos1.jpg" alt="Gallery Image 5" />
+                <img src="./images/fotos2.jpg" alt="Gallery Image 6" />
+                <img src="./images/fotos1.jpg" alt="Gallery Image 7" />
+                <img src="./images/fotos2.jpg" alt="Gallery Image 8" />
               </div>
             </div>
           </div>
@@ -278,7 +284,6 @@
           <script src="lib/easing/easing.min.js"></script>
           <script src="lib/waypoints/waypoints.min.js"></script>
           <script src="lib/counterup/counterup.min.js"></script>
-          <script src="lib/owlcarousel/owl.carousel.min.js"></script>
           <script src="lib/lightbox/js/lightbox.min.js"></script>
         </div>
       </div>

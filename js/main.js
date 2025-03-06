@@ -36,25 +36,6 @@ $(document).ready(function(){
 	  updateCount();
    });
 
-   (function ($) {
-    "use strict";
-    
-    $(".clients-carousel").owlCarousel({
-        autoplay: true,
-        dots: true,
-        loop: true, // Ensure the carousel loops correctly
-        responsive: { 0: {items: 1}, 576: {items: 2}, 768: {items: 3}, 992: {items: 4} }
-    });
-
-    $(".testimonials-carousel").owlCarousel({
-        autoplay: true,
-        dots: true,
-        loop: true, // Ensure the carousel loops correctly
-        responsive: { 0: {items: 1}, 576: {items: 2}, 768: {items: 3}, 992: {items: 4} }
-    });
-    
-})(jQuery);
-
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
         $('.back-to-top').fadeIn('slow');
