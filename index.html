@@ -85,8 +85,10 @@
         overflow: hidden; /* Evita el desbordamiento horizontal */
       }
       .owl-carousel .item img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
       }
     </style>
   </head>
@@ -305,7 +307,7 @@
           /* Contenedor principal para centrar y limitar el ancho */
           .contact-form {
             max-width: 900px; /* Ajusta el ancho máximo si lo deseas */
-            margin: 0 auto; /* Centra horizontalmente */
+            margin: 50px auto 0 auto; /* Centra horizontalmente */
             padding: 0 20px; /* Espaciado lateral opcional */
           }
 
