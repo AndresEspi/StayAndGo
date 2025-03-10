@@ -81,6 +81,17 @@
         margin-left: 0; /* Elimina el margen izquierdo */
         box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
       }
+      .header .logo {
+        margin-left: auto; /* Mueve el logo al lado derecho */
+        display: flex;
+        justify-content: flex-end; /* Alinea el logo a la derecha */
+      }
+      .header .container-fluid {
+        display: flex;
+        justify-content: space-between; /* Asegura que el logo y la barra de navegación estén separados */
+        align-items: center; /* Alinea verticalmente los elementos */
+        flex-direction: row-reverse; /* Invierte el orden de los elementos */
+      }
       .footer {
         width: 100%;
         overflow: hidden; /* Evita el desbordamiento horizontal */
