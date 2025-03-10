@@ -67,45 +67,51 @@
           padding-right: 15px;
         }
       }
-      body {
+      html, body {
         margin: 0;
         padding: 0;
         overflow-x: hidden; /* Evita el desbordamiento horizontal */
-        width: 100vw; /* Ensure the body takes the full width of the viewport */
+        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
+        background-color: #fff; /* Asegura que el color de fondo sea blanco */
+        width: 100%; /* Asegura que el ancho sea del 100% */
       }
       .container-fluid {
         padding-left: 0;
         padding-right: 0;
-        margin-left: 0; /* Remove any left margin */
-        width: 100%; /* Ensure the container takes the full width */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
       }
       .footer {
         width: 100%;
         overflow: hidden; /* Evita el desbordamiento horizontal */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
       }
       .footer-top {
         width: 100%;
         overflow: hidden; /* Evita el desbordamiento horizontal */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
       }
       .gallery {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-        margin-bottom: 70px; /* Add more spacing at the end of the gallery section */
+        margin-bottom: 70px; /* Añade más espacio al final de la sección de la galería */
       }
       .gallery img {
-        width: calc(25% - 10px);
+        width: calc(15% - 10px); /* Reduce aún más el ancho de las imágenes */
         border-radius: 10px;
       }
       @media (max-width: 768px) {
         .gallery img {
-          width: calc(50% - 10px);
+          width: calc(35% - 10px); /* Ajusta el ancho para pantallas más pequeñas */
         }
       }
       @media (max-width: 575px) {
         .gallery img {
-          width: 100%;
+          width: 80%; /* Ajusta el ancho para las pantallas más pequeñas */
         }
       }
       .communicate .btn {
