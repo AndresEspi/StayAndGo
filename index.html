@@ -149,7 +149,7 @@
       .home h1, .home h2 {
         color: #21335f; /* Change text color to new navy blue */
         font-weight: bold; /* Make text bold */
-        font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
+        font-family: 'Playfair Display', serif; /* Ensure font style is maintained */
       }
       .header {
         background-color: transparent; /* Initial background color */
@@ -173,7 +173,7 @@
       }
       .about .wave {
         position: absolute;
-        bottom: -.5rem;
+        bottom: 0; /* Ensure waves are at the bottom */
         left: 0;
         height: 11rem;
         width: 100%;
@@ -206,7 +206,7 @@
       }
       .faq .wave {
         position: absolute;
-        bottom: -.5rem;
+        bottom: 0; /* Ensure waves are at the bottom */
         left: 0;
         height: 11rem;
         width: 100%;
@@ -230,6 +230,26 @@
         }
         100% {
           background-position-x: 100rem;
+        }
+      }
+      @media (max-width: 768px) {
+        .home .container-fluid {
+          grid-template-columns: 1fr; /* Single column layout for mobile */
+          text-align: center; /* Center text for mobile */
+        }
+        .home h1 {
+          font-size: 4rem; /* Adjust font size for mobile */
+          font-family: 'Playfair Display', serif; /* Ensure font style is maintained */
+        }
+        .home h2 {
+          font-size: 2rem; /* Adjust font size for mobile */
+        }
+        .home .right-column {
+          display: none; /* Hide right column on mobile */
+        }
+        .about .wave, .faq .wave {
+          height: 8rem; /* Adjust wave height for mobile */
+          background-size: 50rem 8rem; /* Adjust background size for mobile */
         }
       }
     </style>

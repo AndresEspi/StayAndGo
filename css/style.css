@@ -218,7 +218,7 @@ body{
 }
 
 .home h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif; /* Ensure font style is maintained */
     font-size: 8rem; /* Increase font size */
     font-weight: 700;
     color: #21335f;
@@ -275,7 +275,7 @@ body{
 }
 .about .wave {
     position: absolute;
-    bottom: -.5rem;
+    bottom: 0; /* Ensure waves are at the bottom */
     left: 0;
     height: 11rem;
     width: 100%;
@@ -1143,7 +1143,7 @@ body{
         
         .faq .wave {
             position: absolute;
-            bottom: -.5rem;
+            bottom: 0; /* Ensure waves are at the bottom */
             left: 0;
             height: 11rem;
             width: 100%;
@@ -1476,6 +1476,7 @@ body{
 
     .home h1 {
         font-size: 4rem; /* Adjust font size for mobile */
+        font-family: 'Playfair Display', serif; /* Ensure font style is maintained */
     }
 
     .home h2 {
@@ -1484,5 +1485,10 @@ body{
 
     .home .right-column {
         display: none; /* Hide right column on mobile */
+    }
+
+    .about .wave, .faq .wave {
+        height: 8rem; /* Adjust wave height for mobile */
+        background-size: 50rem 8rem; /* Adjust background size for mobile */
     }
 }
