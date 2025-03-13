@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600&display=swap');
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -26,6 +27,19 @@ body{
     color: #21335f;
     position: relative;
     letter-spacing: .2rem;
+    font-family: 'Playfair Display', serif; /* Change font to Playfair Display */
+}
+
+.section-head h1, .section-head-1 h4 {
+    font-family: 'Playfair Display', serif; /* Change font to Playfair Display */
+}
+
+.section-head p, .section-head-1 p, .clients .section-header p, .testimonials .section-header p {
+    font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
+    font-size: 1.8rem; /* Adjust font size */
+    font-weight: 600; /* Adjust font weight */
+    color: #21335f; /* Change text color to new navy blue */
+    margin-bottom: 2rem;
 }
 
 .heading::before, .heading::after, .clients .section-header h2::before, .clients .section-header h2::after, .section-head h1::before, .section-head h1::after, .testimonials .section-header h2::before, .testimonials .section-header h2::after, .section-head-1 h4::before, .section-head-1 h4::after{
@@ -116,11 +130,16 @@ body{
 }
 
 .header .navbar ul li a {
-    color: #ffffff; /* Change menu text color to new navy blue */
+    font-family: 'Playfair Display', serif; /* Change font to Playfair Display */
+    color: #21335f; /* Change menu text color to new navy blue */
 }
 
 .header.scrolled .navbar ul li a {
     color: #fff; /* Change menu text color to white when scrolled */
+}
+
+.header .navbar ul li a:hover {
+    color: #21335f; /* Change hover color to new navy blue */
 }
 
 .header .logo img{
@@ -170,18 +189,61 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column;
-    text-align: center;
-    padding: 0 1rem;
+    text-align: left; /* Align text to the left */
+    padding: 4rem; /* General padding */
+    margin: auto; /* Center container */
     position: relative;
     overflow: hidden !important;
     height: calc(100vh + 50px); /* Ensure it occupies the entire first page with extra space */
+    background-color: #f0f0f0; /* Background color between gray and white */
 }
 
-.home h1, .home h2 {
-  color: #21335f; /* Change text color to new navy blue */
-  font-weight: bold; /* Make text bold */
-  font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)); /* Pale overlay transitioning to white at edges */
+    z-index: 1;
+}
+
+.home .container-fluid {
+    display: grid;
+    grid-template-columns: 70% 30%; /* 2-column layout */
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
+.home h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 8rem; /* Increase font size */
+    font-weight: 700;
+    color: #21335f;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Soft text shadow */
+}
+
+.home h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem; /* Increase font size */
+    font-weight: 600;
+    color: #21335f;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.home h2::before {
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJDMTcuNTUyIDIgMjIgNi40NDggMjIgMTJDMjIgMTcuNTUyIDE3LjU1MiAyMiAxMiAyMkM2LjQ0OCAyMiAyIDcuNTUyIDIgMTJDMiA2LjQ0OCA2LjQ0OCAyIDEyIDJaTTEyIDZDMTAgNiAxMCA3LjUgMTAgN0MxMCA2LjUgMTAuNSAzIDEyIDNDMTMuNSAzIDE0IDYuNSAxNCA3QzE0IDcuNSAxNCA2IDEyIDZaIiBmaWxsPSIjMjEzMzVmIi8+Cjwvc3ZnPgo='); /* SVG icon of house */
+    margin-right: 0.5rem;
+}
+
+.home .right-column {
+    border-left: 2px solid transparent;
+    background: linear-gradient(to bottom, #21335f, transparent); /* Decorative vertical line */
+    height: 100%;
 }
 
 @keyframes waves{
@@ -1404,4 +1466,23 @@ body{
         .faq .row .accordion-container{
             width: 100%;
         }
+}
+
+@media (max-width: 768px) {
+    .home .container-fluid {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        text-align: center; /* Center text for mobile */
+    }
+
+    .home h1 {
+        font-size: 4rem; /* Adjust font size for mobile */
+    }
+
+    .home h2 {
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+
+    .home .right-column {
+        display: none; /* Hide right column on mobile */
+    }
 }
