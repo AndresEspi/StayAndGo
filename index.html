@@ -39,6 +39,7 @@
     <script src="./js/main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
       #faq {
         scroll-margin-top: 20px;
@@ -245,11 +246,36 @@
           font-size: 2rem; /* Adjust font size for mobile */
         }
         .home .right-column {
-          display: none; /* Hide right column on mobile */
+          display: block; /* Ensure right column is displayed on mobile */
+          margin-top: 20px; /* Add some space above the right column */
         }
         .about .wave, .faq .wave {
           height: 8rem; /* Adjust wave height for mobile */
           background-size: 50rem 8rem; /* Adjust background size for mobile */
+        }
+      }
+      .right-column {
+        font-family: 'Pacifico', cursive;
+        font-size: 4rem; /* Increase font size */
+        color: white;
+        text-align: center;
+      }
+      @media (min-width: 769px) {
+        .right-column {
+          display: flex;
+          align-items: center; /* Center vertically */
+          justify-content: center; /* Center horizontally */
+          height: 100%; /* Ensure it takes the full height of the container */
+        }
+      }
+      @media (max-width: 768px) {
+        .right-column {
+          font-size: 3rem;
+        }
+      }
+      @media (max-width: 575px) {
+        .right-column {
+          font-size: 2.5rem;
         }
       }
     </style>
@@ -277,9 +303,17 @@
       <div class="container-fluid">
         <div>
           <h1>Transforma tu hogar con elegancia</h1>
+          <br>
+          <br>
+          <br>
           <h2>Lo mejor para tu familia</h2>
+          <br>
+          <br>
+          <br>
         </div>
-        <div class="right-column"></div>
+        <div class="right-column">
+          Stay & Go
+        </div>
       </div>
     </section>
 
