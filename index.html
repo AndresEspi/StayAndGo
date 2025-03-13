@@ -547,7 +547,13 @@
     <script>
       window.addEventListener('scroll', function() {
         const header = document.querySelector('.header');
+        const menuIcon = document.querySelector('.fa-bars');
         header.classList.toggle('scrolled', window.scrollY > 0);
+        if (window.scrollY > 0) {
+          menuIcon.style.color = '#fff'; /* Change menu icon color to white when scrolled */
+        } else {
+          menuIcon.style.color = '#21335f'; /* Change menu icon color back to navy blue */
+        }
       });
 
       document.querySelector('.fa-bars').addEventListener('click', function() {

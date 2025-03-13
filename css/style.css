@@ -158,7 +158,7 @@ body{
 .header .fa-bars{
     color: #fff;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 4rem; /* Increase font size */
     display: none;
 }
 
