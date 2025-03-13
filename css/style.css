@@ -107,6 +107,20 @@ body{
     left: 0;
     z-index: 100;
     position: fixed;
+    background-color: transparent; /* Initial background color */
+    transition: background-color 0.3s;
+}
+
+.header.scrolled {
+    background-color: #002e5f; /* Change background color to navy blue when scrolled */
+}
+
+.header .navbar ul li a {
+    color: #002e5f; /* Change menu text color to navy blue */
+}
+
+.header.scrolled .navbar ul li a {
+    color: #fff; /* Change menu text color to white when scrolled */
 }
 
 .header .logo img{
@@ -161,39 +175,13 @@ body{
     padding: 0 1rem;
     position: relative;
     overflow: hidden !important;
+    height: calc(100vh + 50px); /* Ensure it occupies the entire first page with extra space */
 }
 
-.home h1{
-    color: #fff;
-    font-size: 5.5rem;
-}
-
-.home h2{
-    color: #fff;
-    font-size: 3rem;
-}
-
-.home .wave{
-    position: absolute;
-    bottom: -.5rem;
-    left: 0;
-    height: 11rem;
-    width: 100%;
-    background: url(../images/wave.png);
-    background-size: 100rem 11rem;
-    animation: waves 8s linear infinite;
-    background-repeat: repeat-x;
-}
-
-.home .wave2{
-    animation-direction: reverse;
-    animation-duration: 6s;
-    opacity: .3;
-}
-
-.home .wave3{
-    animation-duration: 4s;
-    opacity: .5;
+.home h1, .home h2 {
+  color: #002e5f; /* Change text color to navy blue */
+  font-weight: bold; /* Make text bold */
+  font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
 }
 
 @keyframes waves{
@@ -213,30 +201,37 @@ body{
     position: relative;
     overflow: hidden;
     line-height: 10rem;
+    background-color: #002e5f; /* Change background color to navy blue */
+    color: #fff; /* Change text color to white */
+}
+.about .heading {
+    color: #fff; /* Change title color to white */
+}
+.about .heading::before, .about .heading::after {
+    border-top: .4rem solid #fff; /* Change corner frames to white */
+    border-left: .4rem solid #fff; /* Change corner frames to white */
+}
+.about .wave {
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    height: 11rem;
+    width: 100%;
+    background: url(../images/wave.png);
+    background-size: 100rem 11rem;
+    animation: waves 8s linear infinite;
+    background-repeat: repeat-x;
+}
+.about .wave2 {
+    animation-direction: reverse;
+    animation-duration: 6s;
+    opacity: .3;
+}
+.about .wave3 {
+    animation-duration: 4s;
+    opacity: .5;
 }
 
-.about .row{
-    line-height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 4rem;
-}
-
-.about .row .content{
-    text-align: center;
-}
-
-.about .row .content h3{
-    font-size: 3rem;
-    color: black;
-}
-
-.about .row .content p{
-    font-size: 2rem;
-    color: #333;
-    padding: 1rem 0;
-}
 .pt-5 .container .row .section-head p{
     font-size: 2rem;
     color: #333;
@@ -1011,9 +1006,20 @@ body{
             width: 100vw;
             text-align: center;
             padding: 0 2rem;
-            background: url(../images/faq.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-color: #002e5f; /* Change background color to navy blue */
+            color: #fff; /* Change text color to white */
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 100px; /* Add more space at the end of the section */
+        }
+        
+        .faq .heading{
+            color: #fff; /* Change title color to white */
+        }
+        
+        .faq .heading::before, .faq .heading::after{
+            border-top: .4rem solid #fff; /* Change corner frames to white */
+            border-left: .4rem solid #fff; /* Change corner frames to white */
         }
         
         .faq .row{
@@ -1071,6 +1077,27 @@ body{
             display: none;
             margin-left: 1rem;
             margin-right: 2rem;
+        }
+        
+        .faq .wave {
+            position: absolute;
+            bottom: -.5rem;
+            left: 0;
+            height: 11rem;
+            width: 100%;
+            background: url(../images/wave.png);
+            background-size: 100rem 11rem;
+            animation: waves 8s linear infinite;
+            background-repeat: repeat-x;
+        }
+        .faq .wave2 {
+            animation-direction: reverse;
+            animation-duration: 6s;
+            opacity: .3;
+        }
+        .faq .wave3 {
+            animation-duration: 4s;
+            opacity: .5;
         }
         
 .gallery {

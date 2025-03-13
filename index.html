@@ -37,6 +37,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
     <script src="./js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
       #faq {
         scroll-margin-top: 20px;
@@ -129,8 +130,106 @@
         color: #002e5f; /* Change text color to blue */
       }
       .communicate .btn:hover {
-        background: #00bfff; /* Change background color on hover */
+        background: #002e5f; /* Change background color on hover */
         color: white; /* Change text color on hover */
+      }
+      .header .navbar ul li a {
+        color: #002e5f; /* Change menu text color to navy blue */
+      }
+      .header.scrolled .navbar ul li a {
+        color: #fff; /* Change menu text color to white when scrolled */
+      }
+      .header .navbar ul li a:hover {
+        color: #002e5f; /* Change hover color to navy blue */
+      }
+      .btn-primary:hover {
+        background: #002e5f; /* Change button hover background color to navy blue */
+      }
+      .home h1, .home h2 {
+        color: #002e5f; /* Change text color to navy blue */
+        font-weight: bold; /* Make text bold */
+        font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
+      }
+      .header {
+        background-color: transparent; /* Initial background color */
+        transition: background-color 0.3s;
+      }
+      .header.scrolled {
+        background-color: #002e5f; /* Change background color to navy blue when scrolled */
+      }
+      .about {
+        background-color: #002e5f; /* Change background color to navy blue */
+        color: #fff; /* Change text color to white */
+        position: relative;
+        overflow: hidden;
+      }
+      .about .heading {
+        color: #fff; /* Change title color to white */
+      }
+      .about .heading::before, .about .heading::after {
+        border-top: .4rem solid #fff; /* Change corner frames to white */
+        border-left: .4rem solid #fff; /* Change corner frames to white */
+      }
+      .about .wave {
+        position: absolute;
+        bottom: -.5rem;
+        left: 0;
+        height: 11rem;
+        width: 100%;
+        background: url(../images/wave.png);
+        background-size: 100rem 11rem;
+        animation: waves 8s linear infinite;
+        background-repeat: repeat-x;
+      }
+      .about .wave2 {
+        animation-direction: reverse;
+        animation-duration: 6s;
+        opacity: .3;
+      }
+      .about .wave3 {
+        animation-duration: 4s;
+        opacity: .5;
+      }
+      .faq {
+        background-color: #002e5f; /* Change background color to navy blue */
+        color: #fff; /* Change text color to white */
+        position: relative;
+        overflow: hidden;
+      }
+      .faq .heading {
+        color: #fff; /* Change title color to white */
+      }
+      .faq .heading::before, .faq .heading::after {
+        border-top: .4rem solid #fff; /* Change corner frames to white */
+        border-left: .4rem solid #fff; /* Change corner frames to white */
+      }
+      .faq .wave {
+        position: absolute;
+        bottom: -.5rem;
+        left: 0;
+        height: 11rem;
+        width: 100%;
+        background: url(../images/wave.png);
+        background-size: 100rem 11rem;
+        animation: waves 8s linear infinite;
+        background-repeat: repeat-x;
+      }
+      .faq .wave2 {
+        animation-direction: reverse;
+        animation-duration: 6s;
+        opacity: .3;
+      }
+      .faq .wave3 {
+        animation-duration: 4s;
+        opacity: .5;
+      }
+      @keyframes waves {
+        0% {
+          background-position-x: 0;
+        }
+        100% {
+          background-position-x: 100rem;
+        }
       }
     </style>
   </head>
@@ -156,10 +255,7 @@
     <section id="home" class="home">
       <div class="container-fluid text-center">
         <h1>Transforma tu hogar con elegancia</h1>
-        <h2>El toque de distinción que mereces</h2>
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
+        <h2>Lo mejor para tu familia</h2>
       </div>
     </section>
 
@@ -178,13 +274,10 @@
           </div>
         </div>
       </div>
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
     </section>
-
-    <div class="communicate text-center">
-      <h3>Descubre los mejores muebles para tu hogar</h3>
-      <p>Calidad y comodidad a tu alcance</p>
-      <a href="#contact"><button class="btn btn-primary">Tu Opinión</button></a>
-    </div>
 
     <div class="pt-5 pb-5" style="background-color: #f2f2f2">
       <div class="container">
@@ -234,18 +327,6 @@
               <h6>Asesoría en diseño de interiores</h6>
               <p>
                 🛋️ ¿No sabes qué muebles elegir? Te ayudamos a encontrar el
-                estilo perfecto para tu hogar. 💡 Nuestros especialistas te
-                asesorarán en la selección y distribución de los muebles para
-                crear espacios armoniosos y funcionales.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item text-center">
-              <span class="icon feature_box_col_three"
-                ><i class="fa fa-magic"></i
-              ></span>
-              <h6>Envío y montaje gratuito</h6>
               <p>
                 📦 Recibe tus muebles sin preocupaciones. Ofrecemos envío y
                 montaje gratuito en zonas seleccionadas. 🔧 Nuestro equipo se
@@ -271,15 +352,12 @@
         </div>
       </div>
     </div>
-
     <section class="faq">
       <div class="container">
         <div class="row">
           <div class="clients mt-100">
             <div class="container">
-              <h1 class="heading text-center" style="color: #00bfff" id="faq">
-                Galería
-              </h1>
+              <h1 class="heading text-center" id="faq">Galería</h1>
               <div class="section-header text-center">
                 <p style="color: white">
                   Descubre la elegancia en cada detalle: inspiración para tu
@@ -298,6 +376,9 @@
               </div>
             </div>
           </div>
+          <div class="wave wave1"></div>
+          <div class="wave wave2"></div>
+          <div class="wave wave3"></div>
           <script src="lib/jquery/jquery.min.js"></script>
           <script src="lib/jquery/jquery-migrate.min.js"></script>
           <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -463,5 +544,11 @@
         </div>
       </div>
     </div>
+    <script>
+      window.addEventListener('scroll', function() {
+        const header = document.querySelector('.header');
+        header.classList.toggle('scrolled', window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>
