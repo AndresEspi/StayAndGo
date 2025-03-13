@@ -127,26 +127,26 @@
         }
       }
       .communicate .btn {
-        color: #002e5f; /* Change text color to blue */
+        color: #21335f; /* Change text color to new navy blue */
       }
       .communicate .btn:hover {
-        background: #002e5f; /* Change background color on hover */
+        background: #21335f; /* Change background color on hover */
         color: white; /* Change text color on hover */
       }
       .header .navbar ul li a {
-        color: #002e5f; /* Change menu text color to navy blue */
+        color: #21335f; /* Change menu text color to new navy blue */
       }
       .header.scrolled .navbar ul li a {
         color: #fff; /* Change menu text color to white when scrolled */
       }
       .header .navbar ul li a:hover {
-        color: #002e5f; /* Change hover color to navy blue */
+        color: #21335f; /* Change hover color to new navy blue */
       }
       .btn-primary:hover {
-        background: #002e5f; /* Change button hover background color to navy blue */
+        background: #21335f; /* Change button hover background color to new navy blue */
       }
       .home h1, .home h2 {
-        color: #002e5f; /* Change text color to navy blue */
+        color: #21335f; /* Change text color to new navy blue */
         font-weight: bold; /* Make text bold */
         font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
       }
@@ -155,10 +155,10 @@
         transition: background-color 0.3s;
       }
       .header.scrolled {
-        background-color: #002e5f; /* Change background color to navy blue when scrolled */
+        background-color: #21335f; /* Change background color to new navy blue when scrolled */
       }
       .about {
-        background-color: #002e5f; /* Change background color to navy blue */
+        background-color: #21335f; /* Change background color to new navy blue */
         color: #fff; /* Change text color to white */
         position: relative;
         overflow: hidden;
@@ -191,7 +191,7 @@
         opacity: .5;
       }
       .faq {
-        background-color: #002e5f; /* Change background color to navy blue */
+        background-color: #21335f; /* Change background color to new navy blue */
         color: #fff; /* Change text color to white */
         position: relative;
         overflow: hidden;
@@ -548,6 +548,13 @@
       window.addEventListener('scroll', function() {
         const header = document.querySelector('.header');
         header.classList.toggle('scrolled', window.scrollY > 0);
+      });
+
+      document.querySelector('.fa-bars').addEventListener('click', function() {
+        const navbarLinks = document.querySelectorAll('.navbar ul li a');
+        navbarLinks.forEach(link => {
+          link.style.color = '#fff'; /* Set text color to white when navbar is opened */
+        });
       });
     </script>
   </body>

@@ -23,7 +23,7 @@ body{
     padding-top: 6rem;
     display: inline-block;
     font-size: 3.5rem;
-    color: #002e5f;
+    color: #21335f;
     position: relative;
     letter-spacing: .2rem;
 }
@@ -33,8 +33,8 @@ body{
     position: absolute;
     height: 2.5rem;
     width: 2.5rem;
-    border-top: .4rem solid #002e5f;
-    border-left: .4rem solid #002e5f;
+    border-top: .4rem solid #21335f;
+    border-left: .4rem solid #21335f;
 }
 
 .faq .heading::before, .faq .heading::after{
@@ -59,7 +59,7 @@ body{
     border-radius: 5rem;
     background: white;
     border-style: groove;
-    border-color: #002e5f;
+    border-color: #21335f;
     font-size: 1.5rem;
     cursor: pointer;
     height: 3.5rem;
@@ -73,27 +73,27 @@ body{
     border-radius: 5rem;
     background: white;
     border-style: groove;
-    border-color: #002e5f;
+    border-color: #21335f;
     font-size: 1.5rem;
     cursor: pointer;
     height: 3.5rem;
     width: 15rem;
     box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
-    color: #002e5f; /* Change text color to blue */
+    color: #21335f; /* Change text color to new navy blue */
 }
 
 .row .btn:hover{
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
-    background: #002e5f;
+    background: #21335f;
 }
 
 .communicate .btn:hover{
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
-    background: #00bfff; /* Change background color on hover */
+    background: #21335f; /* Change background color on hover */
 }
 
 .header{
@@ -112,11 +112,11 @@ body{
 }
 
 .header.scrolled {
-    background-color: #002e5f; /* Change background color to navy blue when scrolled */
+    background-color: #21335f; /* Change background color to new navy blue when scrolled */
 }
 
 .header .navbar ul li a {
-    color: #002e5f; /* Change menu text color to navy blue */
+    color: #ffffff; /* Change menu text color to new navy blue */
 }
 
 .header.scrolled .navbar ul li a {
@@ -179,7 +179,7 @@ body{
 }
 
 .home h1, .home h2 {
-  color: #002e5f; /* Change text color to navy blue */
+  color: #21335f; /* Change text color to new navy blue */
   font-weight: bold; /* Make text bold */
   font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
 }
@@ -201,7 +201,7 @@ body{
     position: relative;
     overflow: hidden;
     line-height: 10rem;
-    background-color: #002e5f; /* Change background color to navy blue */
+    background-color: #21335f; /* Change background color to new navy blue */
     color: #fff; /* Change text color to white */
 }
 .about .heading {
@@ -805,7 +805,7 @@ body{
             border-radius: 5rem;
             background: white;
             border-style: groove;
-            border-color: #002e5f;
+            border-color: #21335f;
             font-size: 1.5rem;
             cursor: pointer;
             height: 3.5rem;
@@ -816,7 +816,7 @@ body{
             letter-spacing: .1rem;
             opacity: .9;
             color: white;
-            background: #002e5f;
+            background: #21335f;
         }
 		.contact-form-phone
 		{
@@ -843,7 +843,7 @@ body{
         }
         
         .footer .footer-top {
-            background: #002e5f;
+            background: #21335f;
             padding: 60px 0 30px 0;
         }
         
@@ -1006,7 +1006,7 @@ body{
             width: 100vw;
             text-align: center;
             padding: 0 2rem;
-            background-color: #002e5f; /* Change background color to navy blue */
+            background-color: #21335f; /* Change background color to new navy blue */
             color: #fff; /* Change text color to white */
             position: relative;
             overflow: hidden;
@@ -1143,7 +1143,7 @@ body{
 
     .header .fa-bars{
         display: block;
-        color: 	white;
+        color: #21335f; /* Change color to new navy blue */
         margin-right: 1rem;
     }
 
@@ -1157,7 +1157,7 @@ body{
         left: 0;
         height: auto;
         width: 100%;
-        background-color: white;
+        background-color: #21335f; /* Change background color to new navy blue */
         z-index: 1000;
         border-top: .1rem solid rgba(0,0,0,.3);
     }
@@ -1354,7 +1354,7 @@ body{
             border-radius: 5rem;
             background: white;
             border-style: groove;
-            border-color: #002e5f;
+            border-color: #21335f;
             font-size: 1.5rem;
             cursor: pointer;
             height: 3.5rem;
@@ -1365,7 +1365,7 @@ body{
             letter-spacing: .1rem;
             opacity: .9;
             color: white;
-            background: #002e5f;
+            background: #21335f;
         }
 		.contact-form-phone
 		{
