@@ -1,414 +1,582 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stay & Go Tienda de Muebles</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="icon" href="./images/image.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <script src="./js/main.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <style>
-      #faq {
-        scroll-margin-top: 20px;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stay & Go Tienda de Muebles</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="icon" href="./images/gmagenpn />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <script src="./js/main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    #faq {
+      scroll-margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .header .navbar ul {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
       }
-      @media (max-width: 768px) {
-        .header .navbar ul {
-          flex-direction: column;
-          padding-left: 0;
-          padding-right: 0;
-        }
-        .header .navbar ul li {
-          margin-bottom: 10px;
-        }
-        .header .logo img {
-          max-width: 500%; /* Ajusta el tamaño máximo del logo */
-          height: auto;
-        }
+
+      .header .navbar ul li {
+        margin-bottom: 10px;
       }
-      @media (max-width: 575px) {
-        .container,
-        .container-fluid {
-          padding-left: 0;
-          padding-right: 0;
-        }
-        .footer .container,
-        .footer-top .container {
-          padding-left: 15px;
-          padding-right: 15px;
-        }
+
+      .header .logo img {
+        max-width: 500%;
+        /* Ajusta el tamaño máximo del logo */
+        height: auto;
       }
-      html, body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Evita el desbordamiento horizontal */
-        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
-        background-color: #fff; /* Asegura que el color de fondo sea blanco */
-        width: 100%; /* Asegura que el ancho sea del 100% */
-      }
+    }
+
+    @media (max-width: 575px) {
+
+      .container,
       .container-fluid {
         padding-left: 0;
         padding-right: 0;
-        margin-left: 0; /* Elimina el margen izquierdo */
-        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
       }
-      .header .logo {
-        margin-left: auto; /* Mueve el logo al lado derecho */
-        display: flex;
-        justify-content: flex-end; /* Alinea el logo a la derecha */
+
+      .footer .container,
+      .footer-top .container {
+        padding-left: 15px;
+        padding-right: 15px;
       }
-      .header .container-fluid {
-        display: flex;
-        justify-content: space-between; /* Asegura que el logo y la barra de navegación estén separados */
-        align-items: center; /* Alinea verticalmente los elementos */
-        flex-direction: row-reverse; /* Invierte el orden de los elementos */
-      }
-      .footer {
-        width: 100%;
-        overflow: hidden; /* Evita el desbordamiento horizontal */
-        margin-left: 0; /* Elimina el margen izquierdo */
-        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
-      }
-      .footer-top {
-        width: 100%;
-        overflow: hidden; /* Evita el desbordamiento horizontal */
-        margin-left: 0; /* Elimina el margen izquierdo */
-        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
-      }
-      .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 70px; /* Añade más espacio al final de la sección de la galería */
-      }
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      /* Evita el desbordamiento horizontal */
+      box-sizing: border-box;
+      /* Incluye padding y borde en el ancho y alto total del elemento */
+      background-color: #fff;
+      /* Asegura que el color de fondo sea blanco */
+      width: 100%;
+      /* Asegura que el ancho sea del 100% */
+    }
+
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      /* Elimina el margen izquierdo */
+      box-sizing: border-box;
+      /* Incluye padding y borde en el ancho y alto total del elemento */
+    }
+
+    .header .logo {
+      margin-left: auto;
+      /* Mueve el logo al lado derecho */
+      display: flex;
+      justify-content: flex-end;
+      /* Alinea el logo a la derecha */
+    }
+
+    .header .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      /* Asegura que el logo y la barra de navegación estén separados */
+      align-items: center;
+      /* Alinea verticalmente los elementos */
+      flex-direction: row-reverse;
+      /* Invierte el orden de los elementos */
+    }
+
+    .footer {
+      width: 100%;
+      overflow: hidden;
+      /* Evita el desbordamiento horizontal */
+      margin-left: 0;
+      /* Elimina el margen izquierdo */
+      box-sizing: border-box;
+      /* Incluye padding y borde en el ancho y alto total del elemento */
+    }
+
+    .footer-top {
+      width: 100%;
+      overflow: hidden;
+      /* Evita el desbordamiento horizontal */
+      margin-left: 0;
+      /* Elimina el margen izquierdo */
+      box-sizing: border-box;
+      /* Incluye padding y borde en el ancho y alto total del elemento */
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 70px;
+      /* Añade más espacio al final de la sección de la galería */
+    }
+
+    .gallery img {
+      width: calc(15% - 10px);
+      /* Reduce aún más el ancho de las imágenes */
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
       .gallery img {
-        width: calc(15% - 10px); /* Reduce aún más el ancho de las imágenes */
-        border-radius: 10px;
+        width: calc(35% - 10px);
+        /* Ajusta el ancho para pantallas más pequeñas */
       }
-      @media (max-width: 768px) {
-        .gallery img {
-          width: calc(35% - 10px); /* Ajusta el ancho para pantallas más pequeñas */
-        }
+    }
+
+    @media (max-width: 575px) {
+      .gallery img {
+        width: 80%;
+        /* Ajusta el ancho para las pantallas más pequeñas */
       }
-      @media (max-width: 575px) {
-        .gallery img {
-          width: 80%; /* Ajusta el ancho para las pantallas más pequeñas */
-        }
+    }
+
+    .communicate .btn {
+      color: #21335f;
+      /* Change text color to new navy blue */
+    }
+
+    .communicate .btn:hover {
+      background: #21335f;
+      /* Change background color on hover */
+      color: white;
+      /* Change text color on hover */
+    }
+
+    .header .navbar ul li a {
+      color: #21335f;
+      /* Change menu text color to new navy blue */
+    }
+
+    .header.scrolled .navbar ul li a {
+      color: #fff;
+      /* Change menu text color to white when scrolled */
+    }
+
+    .header .navbar ul li a:hover {
+      color: #21335f;
+      /* Change hover color to new navy blue */
+    }
+
+    .btn-primary:hover {
+      background: #21335f;
+      /* Change button hover background color to new navy blue */
+    }
+
+    .home h1,
+    .home h2 {
+      color: #21335f;
+      /* Change text color to new navy blue */
+      font-weight: bold;
+      /* Make text bold */
+      font-family: 'Playfair Display', serif;
+      /* Ensure font style is maintained */
+    }
+
+    .header {
+      background-color: transparent;
+      /* Initial background color */
+      transition: background-color 0.3s;
+    }
+
+    .header.scrolled {
+      background-color: #21335f;
+      /* Change background color to new navy blue when scrolled */
+    }
+
+    .about {
+      background-color: #21335f;
+      /* Change background color to new navy blue */
+      color: #fff;
+      /* Change text color to white */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about .heading {
+      color: #fff;
+      /* Change title color to white */
+    }
+
+    .about .heading::before,
+    .about .heading::after {
+      border-top: .4rem solid #fff;
+      /* Change corner frames to white */
+      border-left: .4rem solid #fff;
+      /* Change corner frames to white */
+    }
+
+    .about .wave {
+      position: absolute;
+      bottom: 0;
+      /* Ensure waves are at the bottom */
+      left: 0;
+      height: 11rem;
+      width: 100%;
+      background: url(./images/wave.png);
+      background-size: 100rem 11rem;
+      animation: waves 8s linear infinite;
+      background-repeat: repeat-x;
+    }
+
+    .about .wave2 {
+      animation-direction: reverse;
+      animation-duration: 6s;
+      opacity: .3;
+    }
+
+    .about .wave3 {
+      animation-duration: 4s;
+      opacity: .5;
+    }
+
+    .faq {
+      background-color: #21335f;
+      /* Change background color to new navy blue */
+      color: #fff;
+      /* Change text color to white */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .faq .heading {
+      color: #fff;
+      /* Change title color to white */
+    }
+
+    .faq .heading::before,
+    .faq .heading::after {
+      border-top: .4rem solid #fff;
+      /* Change corner frames to white */
+      border-left: .4rem solid #fff;
+      /* Change corner frames to white */
+    }
+
+    .faq .wave {
+      position: absolute;
+      bottom: 0;
+      /* Ensure waves are at the bottom */
+      left: 0;
+      height: 11rem;
+      width: 100%;
+      background: url(./images/wave.png);
+      background-size: 100rem 11rem;
+      animation: waves 8s linear infinite;
+      background-repeat: repeat-x;
+    }
+
+    .faq .wave2 {
+      animation-direction: reverse;
+      animation-duration: 6s;
+      opacity: .3;
+    }
+
+    .faq .wave3 {
+      animation-duration: 4s;
+      opacity: .5;
+    }
+
+    @keyframes waves {
+      0% {
+        background-position-x: 0;
       }
-      .communicate .btn {
-        color: #21335f; /* Change text color to new navy blue */
+
+      100% {
+        background-position-x: 100rem;
       }
-      .communicate .btn:hover {
-        background: #21335f; /* Change background color on hover */
-        color: white; /* Change text color on hover */
-      }
-      .header .navbar ul li a {
-        color: #21335f; /* Change menu text color to new navy blue */
-      }
-      .header.scrolled .navbar ul li a {
-        color: #fff; /* Change menu text color to white when scrolled */
-      }
-      .header .navbar ul li a:hover {
-        color: #21335f; /* Change hover color to new navy blue */
-      }
-      .btn-primary:hover {
-        background: #21335f; /* Change button hover background color to new navy blue */
-      }
-      .home h1, .home h2 {
-        color: #21335f; /* Change text color to new navy blue */
-        font-weight: bold; /* Make text bold */
-        font-family: 'Playfair Display', serif; /* Ensure font style is maintained */
-      }
-      .header {
-        background-color: transparent; /* Initial background color */
-        transition: background-color 0.3s;
-      }
-      .header.scrolled {
-        background-color: #21335f; /* Change background color to new navy blue when scrolled */
-      }
-      .about {
-        background-color: #21335f; /* Change background color to new navy blue */
-        color: #fff; /* Change text color to white */
-        position: relative;
-        overflow: hidden;
-      }
-      .about .heading {
-        color: #fff; /* Change title color to white */
-      }
-      .about .heading::before, .about .heading::after {
-        border-top: .4rem solid #fff; /* Change corner frames to white */
-        border-left: .4rem solid #fff; /* Change corner frames to white */
-      }
-      .about .wave {
-        position: absolute;
-        bottom: 0; /* Ensure waves are at the bottom */
-        left: 0;
-        height: 11rem;
-        width: 100%;
-        background: url(./images/wave.png);
-        background-size: 100rem 11rem;
-        animation: waves 8s linear infinite;
-        background-repeat: repeat-x;
-      }
-      .about .wave2 {
-        animation-direction: reverse;
-        animation-duration: 6s;
-        opacity: .3;
-      }
-      .about .wave3 {
-        animation-duration: 4s;
-        opacity: .5;
-      }
-      .faq {
-        background-color: #21335f; /* Change background color to new navy blue */
-        color: #fff; /* Change text color to white */
-        position: relative;
-        overflow: hidden;
-      }
-      .faq .heading {
-        color: #fff; /* Change title color to white */
-      }
-      .faq .heading::before, .faq .heading::after {
-        border-top: .4rem solid #fff; /* Change corner frames to white */
-        border-left: .4rem solid #fff; /* Change corner frames to white */
-      }
-      .faq .wave {
-        position: absolute;
-        bottom: 0; /* Ensure waves are at the bottom */
-        left: 0;
-        height: 11rem;
-        width: 100%;
-        background: url(./images/wave.png);
-        background-size: 100rem 11rem;
-        animation: waves 8s linear infinite;
-        background-repeat: repeat-x;
-      }
-      .faq .wave2 {
-        animation-direction: reverse;
-        animation-duration: 6s;
-        opacity: .3;
-      }
-      .faq .wave3 {
-        animation-duration: 4s;
-        opacity: .5;
-      }
-      @keyframes waves {
-        0% {
-          background-position-x: 0;
-        }
-        100% {
-          background-position-x: 100rem;
-        }
-      }
-      @media (max-width: 768px) {
-        .home .container-fluid {
-          grid-template-columns: 1fr; /* Single column layout for mobile */
-          text-align: center; /* Center text for mobile */
-        }
-        .home h1 {
-          font-size: 4rem; /* Adjust font size for mobile */
-          font-family: 'Playfair Display', serif; /* Ensure font style is maintained */
-        }
-        .home h2 {
-          font-size: 2rem; /* Adjust font size for mobile */
-        }
-        .home .right-column {
-          display: block; /* Ensure right column is displayed on mobile */
-          margin-top: 20px; /* Add some space above the right column */
-        }
-        .about .wave, .faq .wave {
-          height: 8rem; /* Adjust wave height for mobile */
-          background-size: 50rem 8rem; /* Adjust background size for mobile */
-        }
-      }
-      .right-column {
-        font-family: 'Pacifico', cursive;
-        font-size: 4rem; /* Increase font size */
-        color: white;
+    }
+
+    @media (max-width: 768px) {
+      .home .container-fluid {
+        grid-template-columns: 1fr;
+        /* Single column layout for mobile */
         text-align: center;
+        /* Center text for mobile */
       }
-      @media (min-width: 769px) {
-        .right-column {
-          display: flex;
-          align-items: center; /* Center vertically */
-          justify-content: center; /* Center horizontally */
-          height: 100%; /* Ensure it takes the full height of the container */
-        }
-      }
-      @media (max-width: 768px) {
-        .right-column {
-          font-size: 3rem;
-        }
-      }
-      @media (max-width: 575px) {
-        .right-column {
-          font-size: 2.5rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container-fluid">
-        <a href="#" class="logo"
-          ><img src="./images/image.png" alt="Logo Stay & Go"
-        /></a>
-        <div class="fas fa-bars"></div>
-        <nav class="navbar">
-          <ul class="d-flex justify-content-around">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Nosotros</a></li>
-            <li><a href="#service">Servicios</a></li>
-            <li><a href="#faq">Galería</a></li>
-            <li><a href="#contact">Ubicación</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <section id="home" class="home">
-      <div class="container-fluid">
-        <div>
-          <h1>Transforma tu hogar con elegancia</h1>
+      .home h1 {
+        font-size: 4rem;
+        /* Adjust font size for mobile */
+        font-family: 'Playfair Display', serif;
+        /* Ensure font style is maintained */
+      }
+
+      .home h2 {
+        font-size: 2rem;
+        /* Adjust font size for mobile */
+      }
+
+      .home .right-column {
+        display: block;
+        /* Ensure right column is displayed on mobile */
+        margin-top: 20px;
+        /* Add some space above the right column */
+      }
+
+      .about .wave,
+      .faq .wave {
+        height: 8rem;
+        /* Adjust wave height for mobile */
+        background-size: 50rem 8rem;
+        /* Adjust background size for mobile */
+      }
+    }
+
+    .right-column {
+      font-family: 'Pacifico', cursive;
+      font-size: 4rem;
+      /* Increase font size */
+      color: white;
+      text-align: center;
+    }
+
+    @media (min-width: 769px) {
+      .right-column {
+        display: flex;
+        align-items: center;
+        /* Center vertically */
+        justify-content: center;
+        /* Center horizontally */
+        height: 100%;
+        /* Ensure it takes the full height of the container */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .right-column {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .right-column {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 80px;
+      height: 80px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 40px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+      transform: scale(1.1);
+      color: #FFF;
+    }
+
+    @media screen and (max-width: 767px) {
+      .whatsapp-float {
+        width: 65px;
+        height: 65px;
+        bottom: 20px;
+        font-size: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header scrolled"
+    style="/* background: rgb(0, 46, 95); */box-shadow: rgba(0, 0, 0, 0.4) 0px 0.2rem 0.5rem;">
+    <div class="container-fluid">
+      <a href="#" class="logo"><img src="./images/image.png" alt="Logo Stay &amp; Go"></a>
+      <div class="fas fa-bars" style="color: rgb(255, 255, 255);"></div>
+      <nav class="navbar">
+        <ul class="d-flex justify-content-around">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#service">Servicios</a></li>
+          <li><a href="#faq">Galería</a></li>
+          <li><a href="#contact">Ubicación</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="home">
+    <div class="container-fluid">
+      <div>
+        <h1>Transforma tu hogar con elegancia</h1>
+        <br>
+        <br>
+        <br>
+        <h2>Lo mejor para tu familia</h2>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div class="right-column">
+        <img src="./images/image.png" alt="Stay & Go Logo" class="right-logo" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h1 class="heading text-center">Sobre nosotros</h1>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-12">
+          <h3>¡Llevamos comodidad a tu hogar!</h3>
+          <p class="mb-4">
+            En Stay & Go, creemos que cada hogar es un santuario donde el estilo y la comodidad se unen para transformar
+            momentos cotidianos en experiencias memorables. Nos especializamos en ofrecer una amplia gama de muebles,
+            regalos y artículos decorativos pensados para brindar armonía y bienestar a cada espacio. Desde acogedoras
+            salas y dormitorios hasta funcionales cocinas, baños y bares, nuestro compromiso es ayudarte a crear
+            ambientes únicos que reflejen tu personalidad y estilo de vida.
+          </p>
           <br>
-          <br>
-          <br>
-          <h2>Lo mejor para tu familia</h2>
-          <br>
-          <br>
-          <br>
-        </div>
-        <div class="right-column">
-          Stay & Go
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h4 class="text-white mb-3">Misión</h4>
+              <p>
+                Nuestra misión es ofrecer productos de alta calidad que combinen diseño, funcionalidad y confort,
+                contribuyendo a que cada hogar se convierta en un lugar de tranquilidad y felicidad para las familias.
+                Buscamos innovar constantemente en nuestras colecciones para satisfacer las necesidades y gustos de
+                nuestros clientes, asegurando una experiencia de compra única y personalizada.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h4 class="text-white mb-3">Visión</h4>
+              <p>
+                Aspiramos a ser la marca de referencia en soluciones para el hogar, inspirando a las personas a crear
+                espacios llenos de vida y armonía. Nuestro objetivo es expandirnos y evolucionar junto a las tendencias
+                del mercado, manteniendo siempre el compromiso con la excelencia, la sostenibilidad y la innovación en
+                cada uno de nuestros productos.
+              </p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+  </section>
 
-    <section id="about" class="about">
-      <div class="container">
-        <h1 class="heading text-center">Sobre nosotros</h1>
-        <div class="row">
-          <div class="col-12">
-            <h3>¡Llevamos comodidad a tu hogar!</h3>
+  <div class="pt-5 pb-5" style="background-color: #ffffff">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12 text-center" id="service">
+          <h1>Nuestros servicios</h1>
+          <p>
+            Proveemos soluciones de muebles de alta calidad para hacer de tu
+            hogar un refugio de comodidad y estilo. Explora nuestra amplia
+            gama de productos y servicios.
+          </p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item text-center">
+            <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span>
+            <h6>Venta de muebles a la medida</h6>
             <p>
-              En Stay & Go, ofrecemos una amplia gama de muebles que brindan
-              tranquilidad y estilo a tu hogar. Desde camas hasta mesas, sillas
-              y estantes, tenemos todo lo que necesitas para amueblar tu
-              espacio.
+              📏 Diseñamos y fabricamos muebles personalizados según tus
+              necesidades y espacio. 🏡 Si buscas una cama, armario o
+              estantería con medidas o diseños específicos, nuestro equipo te
+              ayudará a crear piezas únicas, con materiales de alta calidad y
+              acabados impecables.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item text-center">
+            <span class="icon feature_box_col_two"><i class="fa fa-android"></i></span>
+            <h6>Garantía y servicio postventa</h6>
+            <p>
+              🛡️ Tu satisfacción es nuestra prioridad. Todos nuestros
+              productos cuentan con garantía, y si necesitas asistencia
+              después de la compra, nuestro equipo de servicio postventa
+              estará disponible para resolver cualquier inconveniente.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item text-center">
+            <span class="icon feature_box_col_three"><i class="fa fa-magic"></i></span>
+            <h6>Asesoría en diseño de interiores</h6>
+            <p>
+              🛋️ ¿No sabes qué muebles elegir? Te ayudamos a encontrar el
+            <p>
+              📦 Recibe tus muebles sin preocupaciones. Ofrecemos envío y
+              montaje gratuito en zonas seleccionadas. 🔧 Nuestro equipo se
+              encargará de la instalación para que disfrutes tu compra sin
+              estrés ni costos adicionales.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item text-center">
+            <span class="icon feature_box_col_three"><i class="fa fa-magic"></i></span>
+            <h6>Planes de financiamiento</h6>
+            <p>
+              💰 Amuebla tu hogar sin preocupaciones. Te ofrecemos opciones de
+              pago flexibles 💵 para que adquieras los muebles que necesitas
+              sin afectar tu presupuesto. ¡Paga cómodamente y sin
+              complicaciones!
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item text-center">
+            <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span>
+            <h6>Venta al por mayor</h6>
+            <p>
+              💼✨ Renueva y equipa tus espacios de manera eficiente. Adquiere mobiliario de alta calidad para hoteles
+              🏨, residencias 🏠 y oficinas 🏢 con condiciones de pago flexibles y descuentos por volumen 🎉. ¡Compra en
+              grandes cantidades sin complicaciones y optimiza tu inversión! 💰🚀
             </p>
           </div>
         </div>
       </div>
-      <div class="wave wave1"></div>
-      <div class="wave wave2"></div>
-      <div class="wave wave3"></div>
-    </section>
-
-    <div class="pt-5 pb-5" style="background-color: #ffffff">
-      <div class="container">
-        <div class="row">
-          <div class="section-head col-sm-12 text-center" id="service">
-            <h1>Nuestros servicios</h1>
-            <p>
-              Proveemos soluciones de muebles de alta calidad para hacer de tu
-              hogar un refugio de comodidad y estilo. Explora nuestra amplia
-              gama de productos y servicios.
-            </p>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item text-center">
-              <span class="icon feature_box_col_one"
-                ><i class="fa fa-laptop"></i
-              ></span>
-              <h6>Venta de muebles a la medida</h6>
-              <p>
-                📏 Diseñamos y fabricamos muebles personalizados según tus
-                necesidades y espacio. 🏡 Si buscas una cama, armario o
-                estantería con medidas o diseños específicos, nuestro equipo te
-                ayudará a crear piezas únicas, con materiales de alta calidad y
-                acabados impecables.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item text-center">
-              <span class="icon feature_box_col_two"
-                ><i class="fa fa-android"></i
-              ></span>
-              <h6>Garantía y servicio postventa</h6>
-              <p>
-                🛡️ Tu satisfacción es nuestra prioridad. Todos nuestros
-                productos cuentan con garantía, y si necesitas asistencia
-                después de la compra, nuestro equipo de servicio postventa
-                estará disponible para resolver cualquier inconveniente.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item text-center">
-              <span class="icon feature_box_col_three"
-                ><i class="fa fa-magic"></i
-              ></span>
-              <h6>Asesoría en diseño de interiores</h6>
-              <p>
-                🛋️ ¿No sabes qué muebles elegir? Te ayudamos a encontrar el
-              <p>
-                📦 Recibe tus muebles sin preocupaciones. Ofrecemos envío y
-                montaje gratuito en zonas seleccionadas. 🔧 Nuestro equipo se
-                encargará de la instalación para que disfrutes tu compra sin
-                estrés ni costos adicionales.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item text-center">
-              <span class="icon feature_box_col_three"
-                ><i class="fa fa-magic"></i
-              ></span>
-              <h6>Planes de financiamiento</h6>
-              <p>
-                💰 Amuebla tu hogar sin preocupaciones. Te ofrecemos opciones de
-                pago flexibles 💵 para que adquieras los muebles que necesitas
-                sin afectar tu presupuesto. ¡Paga cómodamente y sin
-                complicaciones!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
     </section>
 
     <section class="faq">
@@ -480,28 +648,28 @@
       <div class="contact-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.980448991856!2d-74.115168!3d4.597525000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f992fd4ade937%3A0x74f63ce8cbf03682!2zQ3JhLiAzNiAjIDI2LTEzLCBQdWVudGUgQXJhbmRhLCBCb2dvdMOhLCBELkMuLCBCb2dvdMOhLCBELkMu!5e0!3m2!1ses-419!2sco!4v1741208433544!5m2!1ses-419!2sco"
-          width="100%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+          width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="contact-form">
         <style>
           /* Contenedor principal para centrar y limitar el ancho */
           .contact-form {
-            max-width: 900px; /* Ajusta el ancho máximo si lo deseas */
-            margin: 50px auto 0 auto; /* Centra horizontalmente */
-            padding: 0 20px; /* Espaciado lateral opcional */
+            max-width: 900px;
+            /* Ajusta el ancho máximo si lo deseas */
+            margin: 50px auto 0 auto;
+            /* Centra horizontalmente */
+            padding: 0 20px;
+            /* Espaciado lateral opcional */
           }
 
           /* Usamos CSS Grid con una sola columna para apilar los elementos verticalmente */
           .contact-form form {
             display: grid;
-            grid-template-columns: 1fr; /* Una sola columna */
-            gap: 20px; /* Espacio entre cada campo */
+            grid-template-columns: 1fr;
+            /* Una sola columna */
+            gap: 20px;
+            /* Espacio entre cada campo */
           }
 
           /* Cada label se muestra como bloque para ocupar todo el ancho disponible */
@@ -513,7 +681,8 @@
           .contact-form form input,
           .contact-form form textarea {
             width: 100%;
-            box-sizing: border-box; /* Para que el padding y borde se incluyan en el 100% */
+            box-sizing: border-box;
+            /* Para que el padding y borde se incluyan en el 100% */
           }
 
           /* Centra el botón en su "celda" y puedes ajustar su ancho si quieres */
@@ -523,44 +692,19 @@
           }
         </style>
 
-        <form action="https://formspree.io/f/xnnpanvl" method="POST">
+        <form action="https://formspree.io/f/xvgkzdpo" method="POST">
           <label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Nombre"
-              class="contact-form-txt"
-              required
-            />
+            <input type="text" name="name" placeholder="Nombre" class="contact-form-txt" required />
           </label>
           <label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              pattern="[0-9]{10}"
-              placeholder="Número de contacto"
-              maxlength="10"
-              class="contact-form-phone"
-              required
-            />
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Número de contacto"
+              maxlength="10" class="contact-form-phone" required />
           </label>
           <label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Correo"
-              class="contact-form-email"
-              required
-            />
+            <input type="email" name="email" placeholder="Correo" class="contact-form-email" required />
           </label>
           <label>
-            <textarea
-              name="message"
-              placeholder="Tu Mensaje"
-              class="contact-form-txtarea"
-              required
-            ></textarea>
+            <textarea name="message" placeholder="Tu Mensaje" class="contact-form-txtarea" required></textarea>
           </label>
           <button type="submit" class="contact-form-btn submit-btn">
             Enviar
@@ -589,23 +733,18 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="col-lg-3 col-md-6 footer-contact"
-              style="font-size: 1.5rem"
-            >
+            <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem">
               <h4>Contáctanos</h4>
               <p>
                 Carrera 36 #26-15S<br />
                 Bogotá, Colombia<br />
-                <strong>Teléfono:</strong> +57 3007500029 - 302 3502339<br />
-                <strong>Correo:</strong> stayandgocol@gmail.com<br />
+                <strong>Teléfono:</strong> +57 300 7500029 - 000 0000000<br />
+                <strong>Correo:</strong> stayandgo.muebles@gmail.com<br />
               </p>
 
               <div class="social-links">
-                <a
-                  href="https://web.facebook.com/p/Stay-Go-100064154640675/?_rdc=1&_rdr"
-                  ><i class="ion-logo-facebook"></i
-                ></a>
+                <a href="https://web.facebook.com/p/Stay-Go-100064154640675/?_rdc=1&_rdr"><i
+                    class="ion-logo-facebook"></i></a>
               </div>
             </div>
           </div>
@@ -614,10 +753,7 @@
 
       <div class="container">
         <div class="row align-items-center">
-          <div
-            class="col-md-12 text-center"
-            style="color: #fff; font-size: 1.3rem"
-          >
+          <div class="col-md-12 text-center" style="color: #fff; font-size: 1.3rem">
             Copyright &copy; 2025 Stay & Go Tienda de Muebles. Todos los
             Derechos Reservados. By DeMaOp
           </div>
@@ -625,7 +761,7 @@
       </div>
     </div>
     <script>
-      window.addEventListener('scroll', function() {
+      window.addEventListener('scroll', function () {
         const header = document.querySelector('.header');
         const menuIcon = document.querySelector('.fa-bars');
         header.classList.toggle('scrolled', window.scrollY > 0);
@@ -636,269 +772,385 @@
         }
       });
 
-      document.querySelector('.fa-bars').addEventListener('click', function() {
+      document.querySelector('.fa-bars').addEventListener('click', function () {
         const navbarLinks = document.querySelectorAll('.navbar ul li a');
         navbarLinks.forEach(link => {
           link.style.color = '#fff'; /* Set text color to white when navbar is opened */
         });
       });
     </script>
-  </body>
+  <a href="https://wa.link/01ygx0" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+
 </html>
 <style>
-      #faq {
-        scroll-margin-top: 20px;
-      }
-      @media (max-width: 768px) {
-        .header .navbar ul {
-          flex-direction: column;
-          padding-left: 0;
-          padding-right: 0;
-        }
-        .header .navbar ul li {
-          margin-bottom: 10px;
-        }
-        .header .logo img {
-          max-width: 500%; /* Ajusta el tamaño máximo del logo */
-          height: auto;
-        }
-      }
-      @media (max-width: 575px) {
-        .container,
-        .container-fluid {
-          padding-left: 0;
-          padding-right: 0;
-        }
-        .footer .container,
-        .footer-top .container {
-          padding-left: 15px;
-          padding-right: 15px;
-        }
-      }
-      html, body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Evita el desbordamiento horizontal */
-        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
-        background-color: #fff; /* Asegura que el color de fondo sea blanco */
-        width: 100%; /* Asegura que el ancho sea del 100% */
-      }
-      .container-fluid {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 0; /* Elimina el margen izquierdo */
-        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
-      }
-      .header .logo {
-        margin-left: auto; /* Mueve el logo al lado derecho */
-        display: flex;
-        justify-content: flex-end; /* Alinea el logo a la derecha */
-      }
-      .header .container-fluid {
-        display: flex;
-        justify-content: space-between; /* Asegura que el logo y la barra de navegación estén separados */
-        align-items: center; /* Alinea verticalmente los elementos */
-        flex-direction: row-reverse; /* Invierte el orden de los elementos */
-      }
-      .footer {
-        width: 100%;
-        overflow: hidden; /* Evita el desbordamiento horizontal */
-        margin-left: 0; /* Elimina el margen izquierdo */
-        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
-      }
-      .footer-top {
-        width: 100%;
-        overflow: hidden; /* Evita el desbordamiento horizontal */
-        margin-left: 0; /* Elimina el margen izquierdo */
-        box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
-      }
-      .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 70px; /* Añade más espacio al final de la sección de la galería */
-      }
-      .gallery img {
-        width: calc(15% - 10px); /* Reduce aún más el ancho de las imágenes */
-        border-radius: 10px;
-      }
-      @media (max-width: 768px) {
-        .gallery img {
-          width: calc(35% - 10px); /* Ajusta el ancho para pantallas más pequeñas */
-        }
-      }
-      @media (max-width: 575px) {
-        .gallery img {
-          width: 80%; /* Ajusta el ancho para las pantallas más pequeñas */
-        }
-      }
-      .communicate .btn {
-        color: #21335f; /* Change text color to new navy blue */
-      }
-      .communicate .btn:hover {
-        background: #21335f; /* Change background color on hover */
-        color: white; /* Change text color on hover */
-      }
-      .header .navbar ul li a {
-        color: #21335f; /* Change menu text color to new navy blue */
-      }
-      .header.scrolled .navbar ul li a {
-        color: #fff; /* Change menu text color to white when scrolled */
-      }
-      .header .navbar ul li a:hover {
-        color: #21335f; /* Change hover color to new navy blue */
-      }
-      .btn-primary:hover {
-        background: #21335f; /* Change button hover background color to new navy blue */
-      }
-      .home h1, .home h2 {
-        color: #21335f; /* Change text color to new navy blue */
-        font-weight: bold; /* Make text bold */
-        font-family: 'Playfair Display', serif; /* Ensure font style is maintained */
-      }
-      .header {
-        background-color: transparent; /* Initial background color */
-        transition: background-color 0.3s;
-      }
-      .header.scrolled {
-        background-color: #21335f; /* Change background color to new navy blue when scrolled */
-      }
-      .about {
-        background-color: #21335f; /* Change background color to new navy blue */
-        color: #fff; /* Change text color to white */
-        position: relative;
-        overflow: hidden;
-      }
-      .about .heading {
-        color: #fff; /* Change title color to white */
-      }
-      .about .heading::before, .about .heading::after {
-        border-top: .4rem solid #fff; /* Change corner frames to white */
-        border-left: .4rem solid #fff; /* Change corner frames to white */
-      }
-      .about .wave {
-        position: absolute;
-        bottom: 0; /* Ensure waves are at the bottom */
-        left: 0;
-        height: 11rem;
-        width: 100%;
-        background: url(./images/wave.png);
-        background-size: 100rem 11rem;
-        animation: waves 8s linear infinite;
-        background-repeat: repeat-x;
-      }
-      .about .wave2 {
-        animation-direction: reverse;
-        animation-duration: 6s;
-        opacity: .3;
-      }
-      .about .wave3 {
-        animation-duration: 4s;
-        opacity: .5;
-      }
-      .faq {
-        background-color: #21335f; /* Change background color to new navy blue */
-        color: #fff; /* Change text color to white */
-        position: relative;
-        overflow: hidden;
-      }
-      .faq .heading {
-        color: #fff; /* Change title color to white */
-      }
-      .faq .heading::before, .faq .heading::after {
-        border-top: .4rem solid #fff; /* Change corner frames to white */
-        border-left: .4rem solid #fff; /* Change corner frames to white */
-      }
-      .faq .wave {
-        position: absolute;
-        bottom: 0; /* Ensure waves are at the bottom */
-        left: 0;
-        height: 11rem;
-        width: 100%;
-        background: url(./images/wave.png);
-        background-size: 100rem 11rem;
-        animation: waves 8s linear infinite;
-        background-repeat: repeat-x;
-      }
-      .faq .wave2 {
-        animation-direction: reverse;
-        animation-duration: 6s;
-        opacity: .3;
-      }
-      .faq .wave3 {
-        animation-duration: 4s;
-        opacity: .5;
-      }
-      @keyframes waves {
-        0% {
-          background-position-x: 0;
-        }
-        100% {
-          background-position-x: 100rem;
-        }
-      }
-      @media (max-width: 768px) {
-        .home .container-fluid {
-          grid-template-columns: 1fr; /* Single column layout for mobile */
-          text-align: center; /* Center text for mobile */
-        }
-        .home h1 {
-          font-size: 4rem; /* Adjust font size for mobile */
-          font-family: 'Playfair Display', serif; /* Ensure font style is maintained */
-        }
-        .home h2 {
-          font-size: 2rem; /* Adjust font size for mobile */
-        }
-        .home .right-column {
-          display: block; /* Ensure right column is displayed on mobile */
-          margin-top: 20px; /* Add some space above the right column */
-        }
-        .about .wave, .faq .wave {
-          height: 8rem; /* Adjust wave height for mobile */
-          background-size: 50rem 8rem; /* Adjust background size for mobile */
-        }
-      }
-      .right-column {
-        font-family: 'Pacifico', cursive;
-        font-size: 4rem; /* Increase font size */
-        color: white;
-        text-align: center;
-      }
-      @media (min-width: 769px) {
-        .right-column {
-          display: flex;
-          align-items: center; /* Center vertically */
-          justify-content: center; /* Center horizontally */
-          height: 100%; /* Ensure it takes the full height of the container */
-        }
-      }
-      @media (max-width: 768px) {
-        .right-column {
-          font-size: 3rem;
-        }
-      }
-      @media (max-width: 575px) {
-        .right-column {
-          font-size: 2.5rem;
-        }
-      }
-    </style>
-    <style>
-      #galleryCarousel {
-        max-width: 800px;
-        margin: 0 auto 70px auto;
-      }
-      
-      #galleryCarousel .carousel-item img {
-        border-radius: 10px;
-        height: 500px;
-        object-fit: cover;
-      }
-      
-      @media (max-width: 768px) {
-        #galleryCarousel .carousel-item img {
-          height: 300px;
-        }
-      }
-    </style>
+  #faq {
+    scroll-margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .header .navbar ul {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .header .navbar ul li {
+      margin-bottom: 10px;
+    }
+
+    .header .logo img {
+      max-width: 500%;
+      /* Ajusta el tamaño máximo del logo */
+      height: auto;
+    }
+  }
+
+  @media (max-width: 575px) {
+
+    .container,
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .footer .container,
+    .footer-top .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Evita el desbordamiento horizontal */
+    box-sizing: border-box;
+    /* Incluye padding y borde en el ancho y alto total del elemento */
+    background-color: #fff;
+    /* Asegura que el color de fondo sea blanco */
+    width: 100%;
+    /* Asegura que el ancho sea del 100% */
+  }
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    /* Elimina el margen izquierdo */
+    box-sizing: border-box;
+    /* Incluye padding y borde en el ancho y alto total del elemento */
+  }
+
+  .header .logo {
+    margin-left: auto;
+    /* Mueve el logo al lado derecho */
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea el logo a la derecha */
+  }
+
+  .header .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    /* Asegura que el logo y la barra de navegación estén separados */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+    flex-direction: row-reverse;
+    /* Invierte el orden de los elementos */
+  }
+
+  .footer {
+    width: 100%;
+    overflow: hidden;
+    /* Evita el desbordamiento horizontal */
+    margin-left: 0;
+    /* Elimina el margen izquierdo */
+    box-sizing: border-box;
+    /* Incluye padding y borde en el ancho y alto total del elemento */
+  }
+
+  .footer-top {
+    width: 100%;
+    overflow: hidden;
+    /* Evita el desbordamiento horizontal */
+    margin-left: 0;
+    /* Elimina el margen izquierdo */
+    box-sizing: border-box;
+    /* Incluye padding y borde en el ancho y alto total del elemento */
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 70px;
+    /* Añade más espacio al final de la sección de la galería */
+  }
+
+  .gallery img {
+    width: calc(15% - 10px);
+    /* Reduce aún más el ancho de las imágenes */
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .gallery img {
+      width: calc(35% - 10px);
+      /* Ajusta el ancho para pantallas más pequeñas */
+    }
+  }
+
+  @media (max-width: 575px) {
+    .gallery img {
+      width: 80%;
+      /* Ajusta el ancho para las pantallas más pequeñas */
+    }
+  }
+
+  .communicate .btn {
+    color: #21335f;
+    /* Change text color to new navy blue */
+  }
+
+  .communicate .btn:hover {
+    background: #21335f;
+    /* Change background color on hover */
+    color: white;
+    /* Change text color on hover */
+  }
+
+  .header .navbar ul li a {
+    color: #21335f;
+    /* Change menu text color to new navy blue */
+  }
+
+  .header.scrolled .navbar ul li a {
+    color: #fff;
+    /* Change menu text color to white when scrolled */
+  }
+
+  .header .navbar ul li a:hover {
+    color: #21335f;
+    /* Change hover color to new navy blue */
+  }
+
+  .btn-primary:hover {
+    background: #21335f;
+    /* Change button hover background color to new navy blue */
+  }
+
+  .home h1,
+  .home h2 {
+    color: #21335f;
+    /* Change text color to new navy blue */
+    font-weight: bold;
+    /* Make text bold */
+    font-family: 'Playfair Display', serif;
+    /* Ensure font style is maintained */
+  }
+
+  .header {
+    background-color: transparent;
+    /* Initial background color */
+    transition: background-color 0.3s;
+  }
+
+  .header.scrolled {
+    background-color: #21335f;
+    /* Change background color to new navy blue when scrolled */
+  }
+
+  .about {
+    background-color: #21335f;
+    /* Change background color to new navy blue */
+    color: #fff;
+    /* Change text color to white */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about .heading {
+    color: #fff;
+    /* Change title color to white */
+  }
+
+  .about .heading::before,
+  .about .heading::after {
+    border-top: .4rem solid #fff;
+    /* Change corner frames to white */
+    border-left: .4rem solid #fff;
+    /* Change corner frames to white */
+  }
+
+  .about .wave {
+    position: absolute;
+    bottom: 0;
+    /* Ensure waves are at the bottom */
+    left: 0;
+    height: 11rem;
+    width: 100%;
+    background: url(./images/wave.png);
+    background-size: 100rem 11rem;
+    animation: waves 8s linear infinite;
+    background-repeat: repeat-x;
+  }
+
+  .about .wave2 {
+    animation-direction: reverse;
+    animation-duration: 6s;
+    opacity: .3;
+  }
+
+  .about .wave3 {
+    animation-duration: 4s;
+    opacity: .5;
+  }
+
+  .faq {
+    background-color: #21335f;
+    /* Change background color to new navy blue */
+    color: #fff;
+    /* Change text color to white */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .faq .heading {
+    color: #fff;
+    /* Change title color to white */
+  }
+
+  .faq .heading::before,
+  .faq .heading::after {
+    border-top: .4rem solid #fff;
+    /* Change corner frames to white */
+    border-left: .4rem solid #fff;
+    /* Change corner frames to white */
+  }
+
+  .faq .wave {
+    position: absolute;
+    bottom: 0;
+    /* Ensure waves are at the bottom */
+    left: 0;
+    height: 11rem;
+    width: 100%;
+    background: url(./images/wave.png);
+    background-size: 100rem 11rem;
+    animation: waves 8s linear infinite;
+    background-repeat: repeat-x;
+  }
+
+  .faq .wave2 {
+    animation-direction: reverse;
+    animation-duration: 6s;
+    opacity: .3;
+  }
+
+  .faq .wave3 {
+    animation-duration: 4s;
+    opacity: .5;
+  }
+
+  @keyframes waves {
+    0% {
+      background-position-x: 0;
+    }
+
+    100% {
+      background-position-x: 100rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .home .container-fluid {
+      grid-template-columns: 1fr;
+      /* Single column layout for mobile */
+      text-align: center;
+      /* Center text for mobile */
+    }
+
+    .home h1 {
+      font-size: 4rem;
+      /* Adjust font size for mobile */
+      font-family: 'Playfair Display', serif;
+      /* Ensure font style is maintained */
+    }
+
+    .home h2 {
+      font-size: 2rem;
+      /* Adjust font size for mobile */
+    }
+
+    .home .right-column {
+      display: block;
+      /* Ensure right column is displayed on mobile */
+      margin-top: 20px;
+      /* Add some space above the right column */
+    }
+
+    .about .wave,
+    .faq .wave {
+      height: 8rem;
+      /* Adjust wave height for mobile */
+      background-size: 50rem 8rem;
+      /* Adjust background size for mobile */
+    }
+  }
+
+  .right-column {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    /* Increase font size */
+    color: white;
+    text-align: center;
+  }
+
+  @media (min-width: 769px) {
+    .right-column {
+      display: flex;
+      align-items: center;
+      /* Center vertically */
+      justify-content: center;
+      /* Center horizontally */
+      height: 100%;
+      /* Ensure it takes the full height of the container */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .right-column {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .right-column {
+      font-size: 2.5rem;
+    }
+  }
+</style>
+<style>
+  #galleryCarousel {
+    max-width: 800px;
+    margin: 0 auto 70px auto;
+  }
+
+  #galleryCarousel .carousel-item img {
+    border-radius: 10px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    #galleryCarousel .carousel-item img {
+      height: 300px;
+    }
+  }
+</style>

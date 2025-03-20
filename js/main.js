@@ -1,6 +1,8 @@
 $(document).ready(function(){
+    // Set initial color for navbar links
+    $('.navbar a').css('color', '#21335f');
 
-     $('.fa-bars').click(function(){
+    $('.fa-bars').click(function(){
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
     });
@@ -11,11 +13,15 @@ $(document).ready(function(){
 
         if($(window).scrollTop()>35)
         {
-            $('.header').css({'background':'#002e5f','box-shadow':'0 .2rem .5rem rgba(0,0,0,.4)'});
+            $('.header').css({'background':'#21335f','box-shadow':'0 .2rem .5rem rgba(0,0,0,.4)'});
+            $('.header .logo').css('opacity', '1');
+            $('.navbar a').css('color', '#fff');  // Change to white when scrolling down
         }
         else
         {
             $('.header').css({'background':'none','box-shadow':'none'});
+            $('.header .logo').css('opacity', '0');
+            $('.navbar a').css('color', '#21335f');  // Return to blue when at top
         }
     });
 

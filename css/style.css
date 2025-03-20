@@ -244,6 +244,16 @@ body{
     border-left: 2px solid transparent;
     background: linear-gradient(to bottom, #21335f, transparent); /* Decorative vertical line */
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.home .right-column .right-logo {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 @keyframes waves{
@@ -256,18 +266,21 @@ body{
 }
 
 .about{
-    min-height: 55vh;
+    min-height: 38vh;
     width: 100vw;
-    top: -3rem;
+    margin-top: -3rem;
+    margin-bottom: 10rem;
+    top: -2rem;
     text-align: center;
     position: relative;
     overflow: hidden;
-    line-height: 10rem;
-    background-color: #21335f; /* Change background color to new navy blue */
-    color: #fff; /* Change text color to white */
+    line-height: 2rem;
+    padding: 8rem 2rem;
 }
 .about .heading {
-    color: #fff; /* Change title color to white */
+    font-size: 4.5rem;
+    color: #21335f;
+    margin-bottom: 3rem;
 }
 .about .heading::before, .about .heading::after {
     border-top: .4rem solid #fff; /* Change corner frames to white */
@@ -527,7 +540,8 @@ body{
 
 .communicate h3{
     margin-top: 3rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
+    color: var(--color);
 }
 
 .communicate p{
@@ -1115,7 +1129,7 @@ body{
             height: 4rem;
             width: 5rem;
             line-height: 4rem;
-            font-size: 2rem;
+            font-size: 2.5rem;
             background: #333;
             color: #fff;
             clip-path: polygon(0% 0%,75% 0%,100% 50%,75% 100%,0% 100%); 
@@ -1168,8 +1182,8 @@ body{
   margin-bottom: 70px; /* Add more spacing at the end of the gallery section */
 }
 .gallery img {
-  width: calc(25% - 10px);
-  border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 768px) {
   .gallery img {
@@ -1259,14 +1273,14 @@ body{
         min-height: 38vh;
         width: 100vw;
         margin-top: -3rem;
-        margin-bottom: -2rem;
+        margin-bottom: 10rem;
         top: -2rem;
         text-align: center;
         position: relative;
         overflow: hidden;
-        line-height: 6rem;
+        line-height: 2rem;
+        padding: 8rem 2rem;
     }
-    
     .about .row{
         line-height: 2rem;
         display: flex;
@@ -1274,18 +1288,15 @@ body{
         justify-content: space-around;
         padding: 0 4rem;
     }
-    
     .about .row .content{
         text-align: center;
     }
-    
     .about .row .content h3{
-        font-size: 2rem;
+        font-size: 3.2rem;
         color: var(--color);
     }
-    
     .about .row .content p{
-        font-size: 1.3rem;
+        font-size: 2rem;
         color: #333;
         padding: 1rem 0;
     } 
@@ -1389,7 +1400,6 @@ body{
 		}
 		.contact-form-txtarea
 		{
-            margin-left: 2rem;
 			width: 90%;
 			height: 110px;
 			color: #000;
